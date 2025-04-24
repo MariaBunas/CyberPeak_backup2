@@ -1,0 +1,57 @@
+.footer {
+    background-color: #d9f7be; /* Verde foarte deschis, plăcut ochilor */
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stilizare buton Instagram */
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E1306C; /* Culoarea oficială Instagram */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.instagram-button img {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+/* Stilizare logo */
+.footer-logo {
+    width: 100px;
+    margin-top: 15px;
+}
+
+/* Stilizare text "Scan the future!" */
+.scan-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Stilizare text copyright */
+.copyright-text {
+    font-size: 12px;
+    color: black;
+    max-width: 600px;
+    margin-top: 10px;
+    opacity: 0.8;
+}

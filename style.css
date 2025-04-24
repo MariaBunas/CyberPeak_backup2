@@ -16,7 +16,7 @@
 .instagram-button {
     display: inline-flex;
     align-items: center;
-    background-color: #E1306C;
+    background-color: #E1306C; /* Culoarea oficială Instagram */
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
@@ -34,19 +34,17 @@
 }
 
 /* Stilizare logo */
-.footer-logo-section {
-    text-align: right;
+.footer-logo {
+    width: 100px;
     margin-top: 15px;
 }
 
-.footer-logo {
-    width: 100px;
-}
-
+/* Stilizare text "Scan the future!" */
 .scan-text {
     font-size: 16px;
     font-weight: bold;
     color: #333;
+    margin-top: 5px;
 }
 
 /* Stilizare text copyright */
@@ -57,3 +55,4 @@
     margin-top: 10px;
     opacity: 0.8;
 }
+

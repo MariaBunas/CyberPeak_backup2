@@ -1,51 +1,12 @@
-/* Stilizare hartă */
-#map {
-    height: 500px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: white;
-    margin-bottom: 60px; /* Spațiu mai mare după hartă */
-}
-
-/* Stilizare panou legendă */
-.info-legend {
-    background: white;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+/* Stilizare fundal site */
+body {
+    background-color: #d9f7be; /* Verde folosit anterior la subsol */
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    text-align: left;
-    width: 150px;
 }
-
-.legend-title {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.dot {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-.dot.red { background-color: #e74c3c; }
-.dot.yellow { background-color: #f1c40f; }
-.dot.green { background-color: #2ecc71; }
 
 /* Stilizare subsol */
 .footer {
-    background-color: #d9f7be; /* Verde foarte deschis, plăcut ochilor */
+    background-color: #a0a0a0; /* Gri */
     padding: 25px;
     text-align: center;
     border-radius: 10px;
@@ -58,57 +19,64 @@
 /* Stilizare conținut subsol */
 .footer-content {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mutare și mărire buton Instagram și text copyright */
+.left-section {
     text-align: left;
+    flex: 1;
 }
 
 /* Stilizare buton Instagram */
 .instagram-button {
     display: inline-flex;
     align-items: center;
-    background-color: #E1306C; /* Culoarea oficială Instagram */
+    background-color: #E1306C;
     color: white;
-    padding: 8px 12px;
+    padding: 12px 16px; /* Mărit */
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px; /* Mărit */
     transition: 0.3s;
     margin-bottom: 10px;
 }
 
 .instagram-button img {
-    margin-right: 6px;
-    width: 16px;
-    height: 16px;
+    margin-right: 8px;
+    width: 20px; /* Mărit */
+    height: 20px; /* Mărit */
 }
 
 .instagram-button:hover {
     background-color: #C42D63;
 }
 
-/* Stilizare logo și text "Scan the future!" */
-.footer-logo-section {
-    text-align: right;
+/* Mărire text copyright */
+.copyright-text {
+    font-size: 14px; /* Mărit */
+    color: black;
+    max-width: 600px;
+    opacity: 0.8;
 }
 
+/* Mutare și mărire logo și text "Scan the future" */
+.right-section {
+    text-align: right;
+    flex: 1;
+}
+
+/* Stilizare logo și text "Scan the future!" */
 .footer-logo {
-    width: 90px; /* Dimensiune optimizată */
+    width: 120px; /* Mărit */
 }
 
 .scan-text {
-    font-size: 14px;
+    font-size: 18px; /* Mărit */
     font-weight: bold;
     color: #333;
     margin-top: 5px;
 }
-
-/* Stilizare text copyright */
-.copyright-text {
-    font-size: 12px;
-    color: black;
-    max-width: 600px;
-    margin-top: 10px;
-    opacity: 0.8;
-}
-
-

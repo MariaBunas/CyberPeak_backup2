@@ -57,15 +57,16 @@ const map = L.map('map').setView([45.76, 21.23], 6);
 // Load tile layer (OpenStreetMap) 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
 
+// Panou alb pentru legendă
 const legend = L.control({ position: 'bottomright' });
 
 legend.onAdd = function (map) { 
     const div = L.DomUtil.create('div', 'info-legend'); 
     div.innerHTML = `
-    <strong>Severity</strong><br> 
-    <div class="legend-item"><span class="dot red"></span> Bad</div> 
-    <div class="legend-item"><span class="dot yellow"></span> Pretty Bad</div> 
-    <div class="legend-item"><span class="dot green"></span> OK</div> 
+    <div class="legend-title"><strong>Legenda - Severitate</strong></div> 
+    <div class="legend-item"><span class="dot red"></span> Risc Ridicat</div> 
+    <div class="legend-item"><span class="dot yellow"></span> Risc Moderat</div> 
+    <div class="legend-item"><span class="dot green"></span> Siguranță</div> 
     `; 
     return div; 
 }; 
@@ -104,15 +105,17 @@ fetch(csvUrl)
 });
 </script> 
 
-<!-- Subsol gri-verde cu buton Instagram, logo și mesaj -->
+<!-- Subsol cu buton Instagram, logo și mesaj -->
 <footer class="footer">
     <div class="footer-content">
         <a href="https://www.instagram.com/cyberpeak_/" target="_blank" class="instagram-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             Pagina de Instagram
         </a>
-        <img src="logo.png" alt="Cyberpeak Logo" class="footer-logo">
-        <p class="scan-text">Scan the future!</p>
+        <div class="footer-logo-section">
+            <img src="logo.png" alt="Cyberpeak Logo" class="footer-logo">
+            <p class="scan-text">Scan the future!</p>
+        </div>
         <p class="copyright-text">
             Toate drepturile sunt rezervate echipei noastre. Utilizarea neautorizată a acestui material, 
             inclusiv reproducerea, distribuirea, afișarea sau transmiterea oricărui conținut, este strict 

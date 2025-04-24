@@ -1,82 +1,55 @@
-/* Stilizare fundal site */
+/* Fundal site */
 body {
-    background-color: #d9f7be; /* Verde folosit anterior la subsol */
-    font-family: Arial, sans-serif;
+    background-color: #d9f7be;
+}
+
+/* Hartă */
+#map {
+    height: 600px;
 }
 
 /* Stilizare subsol */
 .footer {
-    background-color: rgba(160, 160, 160, 0.8); /* Gri cu transparență */
+    background-color: rgba(160, 160, 160, 0.85);
     padding: 25px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Stilizare conținut subsol */
-.footer-content {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Mutare și mărire buton Instagram și text copyright */
+/* Secțiune stângă */
 .left-section {
     text-align: left;
-    flex: 1;
 }
 
-/* Stilizare buton Instagram */
+/* Buton Instagram */
 .instagram-button {
-    display: inline-flex;
-    align-items: center;
     background-color: #E1306C;
     color: white;
-    padding: 12px 16px; /* Mărit */
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px; /* Mărit */
-    transition: 0.3s;
-    margin-bottom: 10px;
+    padding: 14px 18px;
 }
 
-.instagram-button img {
-    margin-right: 8px;
-    width: 20px; /* Mărit */
-    height: 20px; /* Mărit */
-}
-
-.instagram-button:hover {
-    background-color: #C42D63;
-}
-
-/* Mărire text copyright */
-.copyright-text {
-    font-size: 14px; /* Mărit */
-    color: black;
-    max-width: 600px;
-    opacity: 0.8;
-}
-
-/* Mutare și mărire logo și text "Scan the future" */
+/* Secțiune dreaptă */
 .right-section {
     text-align: right;
-    flex: 1;
 }
 
-/* Stilizare logo și text "Scan the future!" */
+/* Logo */
 .footer-logo {
-    width: 120px; /* Mărit */
+    width: 130px;
 }
 
+/* Text „Scan the future!” */
 .scan-text {
-    font-size: 18px; /* Mărit */
-    font-weight: bold;
-    color: #333;
-    margin-top: 5px;
+    font-size: 20px;
 }
+
+/* Legenda */
+.info-legend {
+    background: white;
+}
+
+/* Puncte colorate */
+.dot.red { background-color: #e74c3c; }
+.dot.yellow { background-color: #f1c40f; }
+.dot.green { background-color: #2ecc71; }

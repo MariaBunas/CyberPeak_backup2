@@ -12,18 +12,15 @@
 
     <!-- PapaParse CSV Parser --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-
-    <style> 
-        #map { height: 600px; width: 100%; margin-bottom: 60px; } /* Spațiu mai mare după hartă */
-    </style> 
 </head> 
+
 <body>
 
 <h2>🗺️ Hartă Interactivă - Cyberpeak</h2> 
 <div id="map"></div> 
 
 <script> 
-// icons : 
+// Definire iconițe pentru severitate
 const icons = { 
     ok: L.icon({ 
         iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
@@ -51,13 +48,13 @@ const icons = {
     }) 
 }; 
 
-// Initialize the map
+// Inițializare hartă
 const map = L.map('map').setView([45.76, 21.23], 6);  
 
-// Load tile layer (OpenStreetMap) 
+// Tile layer OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
 
-// Panou alb pentru legendă
+// Panou legendă
 const legend = L.control({ position: 'bottomright' });
 
 legend.onAdd = function (map) { 
@@ -72,10 +69,9 @@ legend.onAdd = function (map) {
 }; 
 legend.addTo(map);
 
-// CSV file URL
+// Încărcare locații din fișier CSV
 const csvUrl = 'https://raw.githubusercontent.com/popsaraizabela/CyberPeak-harta-interactiva/load-locations-from-csv/locations.csv'; 
 
-// Fetch and parse the CSV 
 fetch(csvUrl)
 .then(response => response.text()) 
 .then(csvText => { 
@@ -99,31 +95,32 @@ fetch(csvUrl)
             }); 
         } 
     }); 
-}) 
+})
 .catch(error => { 
     console.error('Error fetching or parsing the CSV:', error);
 });
 </script> 
 
-<!-- Subsol cu buton Instagram, logo și mesaj -->
+<!-- Subsol -->
 <footer class="footer">
-    <div class="footer-content">
+    <div class="left-section">
         <a href="https://www.instagram.com/cyberpeak_/" target="_blank" class="instagram-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             Pagina de Instagram
         </a>
-        <div class="footer-logo-section">
-            <img src="logo.png" alt="Cyberpeak Logo" class="footer-logo">
-            <p class="scan-text">Scan the future!</p>
-        </div>
         <p class="copyright-text">
-            Toate drepturile sunt rezervate echipei noastre. Utilizarea neautorizată a acestui material, 
-            inclusiv reproducerea, distribuirea, afișarea sau transmiterea oricărui conținut, este strict 
-            interzisă fără consimțământul expres al echipei noastre și al coordonatoarei de proiect, 
-            conform Legii nr. 8/1996 privind dreptul de autor.
+            Toate drepturile sunt rezervate echipei noastre.
         </p>
     </div>
+
+    <div class="right-section">
+        <img src="logo.png" alt="Cyberpeak Logo" class="footer-logo">
+        <p class="scan-text">Scan the future!</p>
+    </div>
 </footer>
+
+</body> 
+</html>
 
 </body> 
 </html>

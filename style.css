@@ -27,7 +27,11 @@
     display: inline-block;
     margin-right: 8px;
 }
-
+.instagram-button img {
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+}
 .dot.red { background-color: #e74c3c; }
 .dot.yellow { background-color: #f1c40f; }
 .dot.green { background-color: #2ecc71; }

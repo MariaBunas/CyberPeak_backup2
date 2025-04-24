@@ -29,6 +29,12 @@ body {
     padding: 14px 18px;
 }
 
+/* Dimensiunea logo-ului Instagram */
+.instagram-button img {
+    width: 16px;
+    height: 16px;
+}
+
 /* Secțiune dreaptă */
 .right-section {
     text-align: right;
@@ -53,3 +59,4 @@ body {
 .dot.red { background-color: #e74c3c; }
 .dot.yellow { background-color: #f1c40f; }
 .dot.green { background-color: #2ecc71; }
+

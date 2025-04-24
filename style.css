@@ -6,7 +6,7 @@ body {
 
 /* Stilizare subsol */
 .footer {
-    background-color: #a0a0a0; /* Gri */
+    background-color: rgba(160, 160, 160, 0.8); /* Gri cu transparență */
     padding: 25px;
     text-align: center;
     border-radius: 10px;

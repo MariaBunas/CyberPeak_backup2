@@ -1,12 +1,23 @@
+/* Stilizare hartă */
+#map {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 60px; /* Spațiu mai mare după hartă */
+}
+
 /* Stilizare panou legendă */
 .info-legend {
     background: white;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: left;
+    width: 150px;
 }
 
 .legend-title {
@@ -27,12 +38,77 @@
     display: inline-block;
     margin-right: 8px;
 }
+
+.dot.red { background-color: #e74c3c; }
+.dot.yellow { background-color: #f1c40f; }
+.dot.green { background-color: #2ecc71; }
+
+/* Stilizare subsol */
+.footer {
+    background-color: #d9f7be; /* Verde foarte deschis, plăcut ochilor */
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stilizare conținut subsol */
+.footer-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* Stilizare buton Instagram */
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E1306C; /* Culoarea oficială Instagram */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
 .instagram-button img {
     margin-right: 6px;
     width: 16px;
     height: 16px;
 }
-.dot.red { background-color: #e74c3c; }
-.dot.yellow { background-color: #f1c40f; }
-.dot.green { background-color: #2ecc71; }
+
+.instagram-button:hover {
+    background-color: #C42D63;
+}
+
+/* Stilizare logo și text "Scan the future!" */
+.footer-logo-section {
+    text-align: right;
+}
+
+.footer-logo {
+    width: 90px; /* Dimensiune optimizată */
+}
+
+.scan-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Stilizare text copyright */
+.copyright-text {
+    font-size: 12px;
+    color: black;
+    max-width: 600px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
 
